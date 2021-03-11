@@ -1,0 +1,82 @@
+﻿<Window x:Class="TrackTagger.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TrackTagger"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="474" Width="452">
+    <Grid MinWidth="7">
+
+        <ListBox x:Name="tagsListBox" 
+        Margin="10,34,10,49"
+        SelectionMode="Multiple" ScrollViewer.VerticalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" ScrollViewer.CanContentScroll="False" UseLayoutRounding="False" FontFamily="Corbel" FontSize="17" FontWeight="Normal"
+        >
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Vertical"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBoxItem>Acid</ListBoxItem>
+            <ListBoxItem>Ambient</ListBoxItem>
+            <ListBoxItem>Bouncy</ListBoxItem>
+            <ListBoxItem>Breaky</ListBoxItem>
+            <ListBoxItem>Bright</ListBoxItem>
+            <ListBoxItem>Cheesy</ListBoxItem>
+            <ListBoxItem>Chill</ListBoxItem>
+            <ListBoxItem>Clean</ListBoxItem>
+            <ListBoxItem>Dark</ListBoxItem>
+            <ListBoxItem>Dirty</ListBoxItem>
+            <ListBoxItem>Disco</ListBoxItem>
+            <ListBoxItem>Distorted</ListBoxItem>
+            <ListBoxItem>Downtempo</ListBoxItem>
+            <ListBoxItem>Dub</ListBoxItem>
+            <ListBoxItem>Epic</ListBoxItem>
+            <ListBoxItem>Ethereal</ListBoxItem>
+            <ListBoxItem>Funky</ListBoxItem>
+            <ListBoxItem>Glitchy</ListBoxItem>
+            <ListBoxItem>Groovy</ListBoxItem>
+            <ListBoxItem>Happy</ListBoxItem>
+            <ListBoxItem>Hard</ListBoxItem>
+            <ListBoxItem>Industrial</ListBoxItem>
+            <ListBoxItem>Jackin'</ListBoxItem>
+            <ListBoxItem>Jazzy</ListBoxItem>
+            <ListBoxItem>Latin</ListBoxItem>
+            <ListBoxItem>Lo-fi</ListBoxItem>
+            <ListBoxItem>Mainstream</ListBoxItem>
+            <ListBoxItem>Massive</ListBoxItem>
+            <ListBoxItem>Melancholic</ListBoxItem>
+            <ListBoxItem>Mellow</ListBoxItem>
+            <ListBoxItem>Melodic</ListBoxItem>
+            <ListBoxItem>Minimalistic</ListBoxItem>
+            <ListBoxItem>Old-Skool</ListBoxItem>
+            <ListBoxItem>Rolling</ListBoxItem>
+            <ListBoxItem>Sad</ListBoxItem>
+            <ListBoxItem>Sexy</ListBoxItem>
+            <ListBoxItem>Soulful</ListBoxItem>
+            <ListBoxItem>Spacey</ListBoxItem>
+            <ListBoxItem>Techy</ListBoxItem>
+            <ListBoxItem>Throaty</ListBoxItem>
+            <ListBoxItem>Tight</ListBoxItem>
+            <ListBoxItem>Tribal</ListBoxItem>
+            <ListBoxItem>Trippy</ListBoxItem>
+            <ListBoxItem>Underground</ListBoxItem>
+            <ListBoxItem>Uplifting</ListBoxItem>
+            <ListBoxItem>Vocal</ListBoxItem>
+            <ListBoxItem>Wavey</ListBoxItem>
+            <ListBoxItem>Weird</ListBoxItem>
+            <ListBoxItem>Dialog Female</ListBoxItem>
+            <ListBoxItem>Dialog Male</ListBoxItem>
+            <ListBoxItem>Sample Female</ListBoxItem>
+            <ListBoxItem>Sample Male</ListBoxItem>
+            <ListBoxItem>Vocal Female</ListBoxItem>
+            <ListBoxItem>Vocal Male</ListBoxItem>
+        </ListBox>
+        <Button x:Name="ResetButton" Content="Reset" Margin="348,414,10,10" MinWidth="94" MinHeight="34" MaxWidth="93" MaxHeight="34"/>
+        <Button x:Name="CopyTagsButton" Content="Copy Tags" Margin="10,414,348,10" MinWidth="94" MinHeight="34" MaxWidth="93" MaxHeight="34" Click="CopyTagsButtonClick">
+        </Button>
+
+
+    </Grid>
+
+</Window>
