@@ -12,6 +12,7 @@ namespace TrackTagger
     {
         private void CopyTagsButtonClick(object sender, RoutedEventArgs e)
         {
+            
             List<string> selectedList = new();
             foreach (var item in tagsListBox.SelectedItems)
             {
@@ -20,13 +21,16 @@ namespace TrackTagger
                 selectedList.Add(combinedString);
             }
 
-
-            if (selectedList.Count == 0) { return; }
-
             string joinedString = string.Join(" ", selectedList);
 
             Clipboard.SetText(joinedString);
         }
+
+        private void ResetTagsButtonClick(object sender, RoutedEventArgs e)
+        {
+            tagsListBox.UnselectAll();
+        }
+
         public MainWindow()
         {
             InitializeComponent();
@@ -37,7 +41,7 @@ namespace TrackTagger
 
     class MoodTags {
         public List<string> tags { get; } = new List<string> {
-            "Acid","Ambient","Bouncy","Breaky","Bright","Cheesy","Chill","Clean","Dark","Dirty","Disco","Distorted","Downtempo","Dub","Epic","Ethereal","Funky","Glitchy","Groovy","Happy","Hard","Industrial","Jackin'","Jazzy","Latin","Lo-fi","Mainstream","Massive","Melancholic","Mellow","Melodic","Minimalistic","Old-School","Rolling","Sad","Sexy","Soulful","Spacey","Techy","Throaty","Tight","Tribal","Trippy","Underground","Uplifting","Vocal","Wavey","Weird","Dialog Female","Dialog Male","Sample Female","Sample Male","Vocal Female","Vocal Male"
+            "Acid","Ambient","Bouncy","Breaky","Bright","Classic","Chill","Clean","Dark","Dirty","Disco","Distorted","Downtempo","Dub","Energetic","Epic","Funky","Glitchy","Groovy","Happy","Hard","HiHat","Industrial","Jackin'","Jazzy","Latin","Lo-fi","Mainstream","Massive","Melancholic","Mellow","Melodic","Minimalistic","Old-School","Punchy","Rolling","Sad","Sexy","Soulful","Spacey","Summer","Techy","Tight","Tribal","Trippy","Underground","Uplifting","Vocal","Warm","Wavey","Weird","Dialog Female","Dialog Male","Sample Female","Sample Male","Vocal Female","Vocal Male"
         };
     }
 }

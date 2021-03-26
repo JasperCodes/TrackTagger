@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TrackTagger"
         mc:Ignorable="d"
-        Title="MainWindow" Height="474" Width="452">
-    <Grid MinWidth="7">
+        Title="Track Tagger" Height="532" Width="509">
+    <Grid MinWidth="7" Margin="0,0,0,-6">
 
         <ListBox x:Name="tagsListBox" 
         Margin="10,34,10,49"
@@ -19,8 +19,8 @@
                 </ItemsPanelTemplate>
             </ListBox.ItemsPanel>
         </ListBox>
-        <Button x:Name="ResetButton" Content="Reset" Margin="348,414,10,10" MinWidth="94" MinHeight="34" MaxWidth="93" MaxHeight="34"/>
-        <Button x:Name="CopyTagsButton" Content="Copy Tags" Margin="10,414,348,10" MinWidth="94" MinHeight="34" MaxWidth="93" MaxHeight="34" Click="CopyTagsButtonClick">
+        <Button x:Name="ResetTagsButton" Content="Reset" Margin="367,434,-9,-10" MinWidth="94" MinHeight="34" MaxWidth="93" MaxHeight="34" Click="ResetTagsButtonClick"/>
+        <Button x:Name="CopyTagsButton" Content="Copy Tags" Margin="-9,434,367,-10" MinWidth="94" MinHeight="34" MaxWidth="93" MaxHeight="34" Click="CopyTagsButtonClick">
         </Button>
 
 
